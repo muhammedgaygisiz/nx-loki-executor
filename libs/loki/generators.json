@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "name": "loki",
+  "version": "0.0.1",
+  "generators": {
+    "loki": {
+      "factory": "./src/generators/loki/generator",
+      "schema": "./src/generators/loki/schema.json",
+      "description": "loki generator"
+    }
+  }
+}
