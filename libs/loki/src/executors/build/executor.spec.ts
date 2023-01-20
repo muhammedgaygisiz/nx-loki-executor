@@ -2,7 +2,12 @@ import {BuildExecutorSchema} from './schema';
 import executor from './executor';
 import {ExecutorContext} from "@nrwl/devkit";
 
-const options: BuildExecutorSchema = {};
+const options: BuildExecutorSchema = {
+  reference: 'apps/prices/.loki/reference',
+  difference: 'apps/prices/.loki/difference',
+  output: 'apps/prices/.loki/current',
+  update: false,
+};
 const context: ExecutorContext = {
   cwd: "",
   isVerbose: false,
